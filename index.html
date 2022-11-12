@@ -2,33 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="css\style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  Try it free
 
-  Build The Community Your Fans Will Love
+    <header class="hero">
+        <nav class="heroNav container">
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does 
-  your audience. Create connections with your users as you engage in genuine discussion. 
+            <figure class="heroLogo">
+                <img src="images/logo.svg" class="heroHuddle" alt="huddle">
+            </figure>
 
-  Get Started For Free
+            <a href="#" class="heroCta">Try it free</a>
+        </nav>
 
-  1.4k+
-  Communities Formed
+        <section class="heroMain container">
 
-  2.7m+
-  Messages Sent
+          <div class="heroTexts">
+            <h1 class="heroTitle">Build The Community Your Fans Will Love</h1>
+            <P class="heroParagraph">Huddle re-imagines the way we build communities. You have a voice, but so does
+              your audience. Create connections with your users as you engage in genuine discussion.</P>
+
+            <a href="#" class="cta">Get Started For Free</a>
+          </div>
+
+          <figure class="heroPicture">
+            <img src="images/screen-mockups.svg" class="heroImg">
+          </figure>
+
+          <div class="heroNumbers">
+            <div class="heroItem">
+              <img src="images/icon-communities.svg" class="heroIcon">
+
+              <h3 class="heroNumber">1.4k+</h3>
+              <p class="heroCommunity">Communities Formed</p>
+            </div>
+
+            <div class="heroItem">
+              <img src="images/icon-messages.svg" class="heroIcon">
+
+              <h3 class="heroNumber">2.7m+</h3>
+              <p class="heroCommunity">Messages Sent</p>
+            </div>
+          </div>
+
+        </section>
+
+        <div class="wave waveBottom"></div>
+    </header>
+
+
+<!--
+
 
   Grow Together
   Generate meaningful discussions with your audience and build a strong, loyal community. 
@@ -55,13 +88,8 @@
   To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
   send you spam or pass on your email address
 
-  Subscribe
+  Subscribe -->
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  
 </body>
 </html>

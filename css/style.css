@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------- CUSTOM PROPERTIES -------- */
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --openSans: 'Open Sans', sans-serif;
+
+    --pink: hsl(322, 100%, 66%);
+    --lightPink: hsl(321, 100%, 78%);
+    --lightRed: hsl(0, 100%, 63%);
+
+    --veryDarkCyan: hsl(192, 100%, 9%);
+    --blue: hsl(207, 100%, 98%);
+
+    --paddingContainer: 60px 0 45px;
+}
+ /* -------- CUSTOM PROPERTIES -------- */
+
+body{
+    font-family: var(--openSans);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--paddingContainer);
+}
+
+.hero{
+    min-height: 100vh;
+    position: relative;
+    --waveBottom: url('../images/bg-section-top-mobile-1.svg')
+}
+
+.heroNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --paddingContainer: 60px 45px;
+}
+
+.heroLogo{
+    width: 45%;
+    max-width: 160px;
+}
+
+.heroHuddle{
+    width: 100%;
+    display: block;
+}
+
+.heroCta{
+    color: var(--lightPink);
+    text-decoration: none;
+    border: 2px solid;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 0 1px;
+}
+
+.heroMain{
+    text-align: center;
+    color: var(--veryDarkCyan);
+}
+
+.heroTitle{
+    font-family: var(--poppins);
+}
+
+.heroParagraph{
+    width: 90%;
+    line-height: 1.5;
+    margin: 16px auto;
+}
+
+.cta{
+    display: inline-block;
+    background-color: var(--pink);
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 30px;
+    margin-top: 16px;
+}
+
+.heroPicture{
+    margin-top: 80px;
+}
+
+.heroImg{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.heroNumbers{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 60px;
+}
+
+.heroItem{
+    overflow: hidden;
+}
+
+.heroNumber{
+    font-size: 60px;
+}
+
+.heroIcon{
+    display: block;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+}
+
+.waveBottom{
+    left: 0;
+    bottom: 0;
+    background-image: var(--waveBottom);
+}
+
+.waveTop{
+    left: 0;
+    top: 0;
+    background-image: var(--waveTop);
+}
