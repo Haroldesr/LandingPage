@@ -87,6 +87,7 @@ body{
     padding: 16px 30px;
     border-radius: 30px;
     margin-top: 16px;
+    font-weight: 600;
 }
 
 .heroPicture{
@@ -139,4 +140,130 @@ body{
     left: 0;
     top: 0;
     background-image: var(--waveTop);
+}
+
+.section{
+    background-color: var(--blue);
+    --paddingContainer: 110px 0;
+}
+
+.sectionWhite{
+    background-color: white;
+    position: relative;
+    --paddingContainer: 210px 0;
+    --waveTop: url(../images/bg-section-bottom-mobile-1.svg);
+    --waveBottom: url(../images/bg-section-Top-mobile-2.svg);
+}
+
+.sectionContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionImg{
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.sectionText{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subtitle{
+    margin-bottom: 16px;
+    font-family: var(--poppins);
+}
+
+.question{
+    position: relative;
+    text-align: center;
+    --waveTop: url(../images/bg-section-bottom-mobile-2.svg);
+    --waveBottom: url(../images/bg-footer-top-mobile.svg);
+
+    --paddingContainer: 190px 0 210px;
+}
+
+.footer{
+    color:#fff;
+    background-color: var(--veryDarkCyan);
+}
+
+.footerTitle{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    font-family: var(--poppins);
+}
+
+.footerParagraph{
+    line-height: 1.5;
+    margin: 16px 0 50px;
+}
+
+.footerForm{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.footerInput{
+    flex-basis: 100%;
+    flex-grow: 1;
+    font-size: 16px;
+    font-family: var(--openSans);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 16px 6px;
+    margin-bottom: 20px;
+}
+
+.footerCta{
+    font-size: 16px;
+    font-family: var(--openSans);
+    background-color: var(--pink);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 40px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.footerLogo{
+    filter: opacity(0.4) drop-shadow(0 0 0 white);
+}
+
+.footerContact{
+    line-height: 50px;
+}
+
+.footerContact::after{
+    content: "Phone: +1-543-123-4567";
+    margin-left: 10px;
+}
+
+.footerContactEmail::after{
+    content: "example@huddle.com";
+}
+
+.footerSocial{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.footerLink{
+    text-decoration: none;
+    width: 40px;
+}
+
+.footerIcon{
+    width: 100%;
+    display: block;
 }
