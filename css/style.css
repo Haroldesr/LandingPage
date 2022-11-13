@@ -19,6 +19,8 @@
 }
  /* -------- CUSTOM PROPERTIES -------- */
 
+/* --------MOBILE DESIGN-------- */
+
 body{
     font-family: var(--openSans);
 }
@@ -182,7 +184,6 @@ body{
     text-align: center;
     --waveTop: url(../images/bg-section-bottom-mobile-2.svg);
     --waveBottom: url(../images/bg-footer-top-mobile.svg);
-
     --paddingContainer: 190px 0 210px;
 }
 
@@ -266,4 +267,80 @@ body{
 .footerIcon{
     width: 100%;
     display: block;
+}
+
+/* --------WEB DESIGN-------- */
+
+@media (min-width:768px){
+    .hero{
+        --waveBottom: url('../images/bg-section-top-desktop-1.svg')
+    }
+
+    .heroTitle{
+        font-size: 48px;
+    }
+
+    .heroParagraph{
+        width: 70%;
+    }
+
+    .cta{
+        padding: 16px 45px;
+    }
+
+    .heroNumbers{
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .sectionWhite{
+        --waveTop: url(../images/bg-section-bottom-desktop-1.svg);
+        --waveBottom: url(../images/bg-section-Top-desktop-2.svg);
+    }
+
+    .sectionContainer{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sectionContainerInverse{
+        flex-direction: row;
+    }
+
+    .sectionPicture{
+        width: 50%;
+    }
+
+    .sectionText{
+        width: 45%;
+        margin-top: 0;
+        text-align: start;
+    }
+
+    .question{
+        --waveTop: url(../images/bg-section-bottom-desktop-2.svg);
+        --waveBottom: url(../images/bg-footer-top-desktop.svg);
+    }
+
+    .footerContainer{
+        --paddingContainer: 110px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footerNewsletter{
+        width: 50%;
+        max-width: 350px;
+        order: 1;
+    }
+
+    .footerContent{
+        width: 50%;
+        max-width: 300px;
+    }
+
+    .footerParagraph{
+        margin: 16px 0 30px;
+    }
 }
